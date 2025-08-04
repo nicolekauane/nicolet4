@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancheria Ponto Econômico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.jpg" alt="Logo Lancheria Ponto Econômico" class="logo" width="250px">
+            <h1>Lancheria Ponto Econômico</h1>
+            <p>Sabor e economia no mesmo lugar!</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Oferecendo os melhores pratos com um toque especial de economia e sabor. Venha nos visitar e experimente!</p>
+        </section>
+
+        <!-- Galeria -->
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery">
+                <img src="prato1.jpg" alt="Prato 1" onclick="openModal(0)">
+                <img src="prato2.jpg" alt="Prato 2" onclick="openModal(1)">
+                <img src="prato3.jpg" alt="Prato 3" onclick="openModal(2)">
+            </div>
+        </section>
+
+        <!-- Modal da Galeria -->
+        <div id="photoModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-content">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+
+        <!-- Cardápio -->
+        <section id="cardapio">
+            <h2>Cardápio</h2>
+            <div class="menu">
+                <div class="menu-category">
+                    <h3 onclick="toggleMenu('burgers')">Burgers &#9660;</h3>
+                    <ul id="burgers" class="hidden">
+                        <li>X-Burger - R$ 12,90</li>
+                        <li>X-Salada - R$ 14,90</li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3 onclick="toggleMenu('pratos')">Pratos Executivos &#9660;</h3>
+                    <ul id="pratos" class="hidden">
+                        <li>Prato Executivo com Carne - R$ 19,90</li>
+                        <li>Prato Executivo com Frango - R$ 18,90</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p><strong>Endereço:</strong> Rua Augusto Emmel- 67</p>
+            <p><strong>WhatsApp:</strong> <a href="">Clique aqui para conversar</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Lancheria Ponto Econômico. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

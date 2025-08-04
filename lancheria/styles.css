@@ -1,0 +1,71 @@
+/* Geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6200;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ff6200;
+    padding: 10px;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 80%;
+}
+
+.menu-category h3 {
+    cursor: pointer;
+    background: #ffcc00;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
