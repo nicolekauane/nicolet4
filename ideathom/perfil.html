@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Exemplo - HealthyQuest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-green-700 text-white p-5 flex items-center">
+        <img class="w-16 h-16 rounded-full mr-4" src="https://via.placeholder.com/64" alt="Foto de Perfil">
+        <div>
+            <h1 class="text-2xl font-bold">João Silva</h1>
+            <p class="text-sm">Usuário desde 2021</p>
+        </div>
+    </header>
+    
+    <main class="p-8">
+        <!-- Seção de Atividades da Semana -->
+        <section class="bg-white p-6 rounded-lg shadow mb-8">
+            <h2 class="text-xl font-semibold text-green-600 mb-4">Atividades da Semana</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tempo de Sono -->
+                <div class="p-4 bg-gray-100 rounded-lg shadow-inner">
+                    <h3 class="text-lg font-bold">Tempo de Sono</h3>
+                    <p class="mt-2 text-gray-700">Média: 7h 30min</p>
+                    <div class="mt-2 bg-gray-300 rounded-full h-4">
+                        <div class="bg-blue-500 h-4 rounded-full" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <!-- Leitura -->
+                <div class="p-4 bg-gray-100 rounded-lg shadow-inner">
+                    <h3 class="text-lg font-bold">Leitura</h3>
+                    <p class="mt-2 text-gray-700">Média: 2h por dia</p>
+                    <div class="mt-2 bg-gray-300 rounded-full h-4">
+                        <div class="bg-yellow-500 h-4 rounded-full" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <!-- Exercício -->
+                <div class="p-4 bg-gray-100 rounded-lg shadow-inner">
+                    <h3 class="text-lg font-bold">Exercício</h3>
+                    <p class="mt-2 text-gray-700">Média: 45 min por dia</p>
+                    <div class="mt-2 bg-gray-300 rounded-full h-4">
+                        <div class="bg-green-500 h-4 rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Histórico de Atividades -->
+        <section class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold text-green-600 mb-4">Histórico de Atividades</h2>
+            <table class="min-w-full table-auto border-collapse">
+                <thead class="bg-green-500">
+                    <tr>
+                        <th class="px-4 py-2 text-white">Dia</th>
+                        <th class="px-4 py-2 text-white">Sono</th>
+                        <th class="px-4 py-2 text-white">Leitura</th>
+                        <th class="px-4 py-2 text-white">Exercício</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-gray-100">
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Segunda</td>
+                        <td class="px-4 py-2">7h</td>
+                        <td class="px-4 py-2">1,5h</td>
+                        <td class="px-4 py-2">30 min</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Terça</td>
+                        <td class="px-4 py-2">8h</td>
+                        <td class="px-4 py-2">2h</td>
+                        <td class="px-4 py-2">45 min</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Quarta</td>
+                        <td class="px-4 py-2">7,5h</td>
+                        <td class="px-4 py-2">2h</td>
+                        <td class="px-4 py-2">40 min</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Quinta</td>
+                        <td class="px-4 py-2">7h 30min</td>
+                        <td class="px-4 py-2">1h 45min</td>
+                        <td class="px-4 py-2">50 min</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2">Sexta</td>
+                        <td class="px-4 py-2">8h</td>
+                        <td class="px-4 py-2">2h 15min</td>
+                        <td class="px-4 py-2">60 min</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

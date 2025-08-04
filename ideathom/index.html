@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyQuest - Gamificação para um Estilo de Vida Saudável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-green-700 text-white p-5 flex justify-between items-center shadow-md">
+        <h1 class="text-2xl font-bold">HealthyQuest</h1>
+        <nav>
+            <ul class="flex gap-6">
+                <li><a href="#" class="hover:underline">Início</a></li>
+                <li><a href="#features" class="hover:underline">Funcionalidades</a></li>
+                <li><a href="#community" class="hover:underline">Comunidade</a></li>
+                <li><a href="./perfil.html" class="hover:underline">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="p-8">
+        <section class="text-center bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-gray-800">Transforme seus hábitos de forma divertida!</h2>
+            <p class="text-gray-600 mt-3">Monitore seu tempo de tela, sono e exercícios com desafios gamificados.</p>
+            <button onclick="iniciarJornada()" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg shadow hover:bg-green-700">Comece Agora</button>
+        </section>
+        
+        <section id="features" class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-green-600">Acompanhe seus Hábitos</h3>
+                <p class="text-gray-600">Veja seu progresso diário com gráficos e estatísticas.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-green-600">Participe de Desafios</h3>
+                <p class="text-gray-600">Compita com amigos e suba no ranking da comunidade.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-green-600">Ganhe Recompensas</h3>
+                <p class="text-gray-600">Conquiste badges e benefícios exclusivos.</p>
+            </div>
+        </section>
+
+        <section id="progress" class="mt-10 bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-green-600">Seu Progresso</h3>
+            <p class="text-gray-600">Acompanhe seu desempenho diário e alcance novas metas.</p>
+            <div class="mt-4 h-4 bg-gray-200 rounded-full">
+                <div id="progress-bar" class="h-4 bg-green-500 rounded-full" style="width: 50%;"></div>
+            </div>
+            <button onclick="atualizarProgresso()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700">Atualizar Progresso</button>
+        </section>
+    </main>
+
+    <script>
+        function iniciarJornada() {
+            alert('Jornada iniciada! Comece agora a transformar seus hábitos.');
+        }
+
+        function atualizarProgresso() {
+            let progressBar = document.getElementById('progress-bar');
+            let currentWidth = parseInt(progressBar.style.width);
+            let newWidth = Math.min(currentWidth + 10, 100);
+            progressBar.style.width = newWidth + '%';
+        }
+    </script>
+</body>
+</html>
